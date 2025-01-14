@@ -3,7 +3,7 @@ UserSettings():GetService("UserGameSettings").MasterVolume = 0
 settings().Rendering.QualityLevel = 1
 setfpscap(15)
 
-script_key = "DUM-WAS-HERE_pwc8pfAuPfdOM5H8QtiLuwDyAfHfZsfvJfhvDt3LTEga="
+getgenv().key = "DUM-WAS-HERE_pwc8pfAuPfdOM5H8QtiLuwDyAfHfZsfvJfhvDt3LTEga="
 getgenv().SetFpsCap = true
 getgenv().FpsCap = 15
 getgenv().OneClickUi = true -- Only Open Necessacry Ui For One Click
@@ -42,5 +42,7 @@ getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performanc
     }
 getgenv().Team = "Pirates"
 getgenv().AutoLoad = false --Will Load Script On Server Hop
-repeat wait() until scriptact
+repeat wait() until getgenv().whitelisted
+script_key = key
+print(script_key)
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
