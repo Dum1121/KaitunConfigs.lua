@@ -38,7 +38,7 @@ getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performanc
 
     }
     getgenv().OneClickFarms = {
-        ["Shark Anchor"] = true,
+        ["Shark Anchor"] = false,
     }
 getgenv().Team = "Pirates"
 getgenv().AutoLoad = false --Will Load Script On Server Hop
