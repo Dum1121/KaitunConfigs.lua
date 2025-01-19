@@ -1,11 +1,11 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 UserSettings():GetService("UserGameSettings").MasterVolume = 0
 settings().Rendering.QualityLevel = 1
-setfpscap(10)
+setfpscap(15)
 
 script_key = "DUM-WAS-HERE_pwc8pfAuPfdOM5H8QtiLuwDyAfHfZsfvJfhvDt3LTEga="
 getgenv().SetFpsCap = true
-getgenv().FpsCap = 10
+getgenv().FpsCap = 15
 getgenv().OneClickUi = true -- Only Open Necessacry Ui For One Click
 getgenv().FpsBoost1 = true
 getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
@@ -26,7 +26,7 @@ getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performanc
         EatFruitFromStorage = true,
         SnipeFruit = true,
         SnipeFruitMirage = true,
-        HopIfFoundNearExploiter = false,
+        HopIfFoundNearExploiter = true,
         HopHakiColor =false,
         HopTushita = false,
         HopValkyriehelm = false,
