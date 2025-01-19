@@ -3,62 +3,44 @@ UserSettings():GetService("UserGameSettings").MasterVolume = 0
 settings().Rendering.QualityLevel = 1
 setfpscap(15)
 
-script_key = "DUM-WAS-HERE_d2Kf3L3wqLKA7lsLylJyK2t5i2slSzsu9"
-getgenv().SettingFarm ={
-        ["Hide UI"] = false,
-        ["Reset Teleport"] = {
-            ["Enabled"] = true,
-            ["Delay Reset"] = 3,
-            ["Item Dont Reset"] = {
-                ["Fruit"] = {
-                    ["Enabled"] = false,
-                    ["All Fruit"] = true, 
-                    ["Select Fruit"] = {
-                        ["Enabled"] = false,
-                        ["Fruit"] = {},
-                    },
-                },
-            },
+script_key = "DUM-WAS-HERE_pwc8pfAuPfdOM5H8QtiLuwDyAfHfZsfvJfhvDt3LTEga="
+getgenv().SetFpsCap = true
+getgenv().FpsCap = 15
+getgenv().OneClickUi = true -- Only Open Necessacry Ui For One Click
+getgenv().FpsBoost1 = true
+getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
+getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
+    getgenv().WhiteScreen = true
+    getgenv().UiCheckItems = false
+    getgenv().OneClickSetting = {
+        Enable=true,
+        UnlimitGetQuest=true,
+        TripleQuest=true,
+        AutoAddStats=true,
+        RedeemCode=true,
+        Sea2KeyHop=true,
+        FruitEat = { --Priority, Name, 
+            [1] = {"Dragon-Dragon","Kitsune-Kitsune","Yeti-Yeti","Gas-Gas","Magma-Magma","Light-Light"},
+            [2] = {"Dragon-Dragon","Kitsune-Kitsune","Yeti-Yeti","Gas-Gas","Magma-Magma","Light-Light"},
         },
-        ["White Screen"] = true,
-        ["Lock Fps"] = {
-            ["Enabled"] = true,
-            ["FPS"] = 15,
-        },
-        ["Get Items"] = {
-            ["Saber"] = true,
-            ["Godhuman"] =  true,
-            ["Skull Guitar"] = true,
-            ["Mirror Fractal"] = true,
-            ["Cursed Dual Katana"] = true,
-            ["Upgrade Race V2-V3"] = true,
-            ["Auto Pull Lever"] = true,
-        },
-        ["Select Hop"] = { -- 70% will have it
-            ["Hop Find Rip Indra Get Valkyrie Helm or Get Tushita"] = true, 
-            ["Hop Find Dough King Get Mirror Fractal"] = true,
-            ["Hop Find Raids Castle [CDK]"] = true,
-            ["Hop Find Cake Queen [CDK]"] = true,
-            ["Hop Find Soul Reaper [CDK]"] = true,
-            ["Hop Find Darkbeard [SG]"] = true,
-            ["Hop Find Mirage [ Pull Lever ]"] = true,
-        },
-        ["Buy Haki"] = {
-            ["Enhancement"] = false,
-            ["Skyjump"] = true,
-            ["Flash Step"] = true,
-            ["Observation"] = true,
-        },
-        ["Sniper Fruit Shop"] = {
-            ["Enabled"] = true, -- Auto Buy Fruit in Shop Mirage and Normal
-            ["Fruit"] = {"Leopard-Leopard","Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas"},
-        },
-        ["Lock Fruit"] = {},
-        ["Webhook"] = {
-            ["Enabled"] = false,
-            ["WebhookUrl"] = "",
-        }
+        EatFruitFromStorage = true,
+        SnipeFruit = true,
+        SnipeFruitMirage = true,
+        HopIfFoundNearExploiter = false,
+        HopHakiColor =false,
+        HopTushita = true,
+        HopValkyriehelm = true,
+        HopMirrorFractal= true,
+        FarmPole = false, -- Turn off If Want Focus Level
+        FarmItems = true, --Turn off If Want Focus Level And CDK, THis Only get After You Get God Human
+        DisableSoulGuitar = false,
+        DisableCDK = false,
+
     }
+    getgenv().OneClickFarms = {
+        ["Shark Anchor"] = false,
+    }
+getgenv().Team = "Pirates"
+getgenv().AutoLoad = false --Will Load Script On Server Hop
 repeat wait() until whitelisted
-getgenv().Key = script_key
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-kaitunBF.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
