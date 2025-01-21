@@ -99,8 +99,8 @@ _G.GunSettings = { -- ปืนที่จะทำ
     ['SerpentBow'] = false,
     ['SoulGuitar'] = true
 }
+repeat wait() until whitelisted;
 -- Script Here !!!
-repeat wait() until whitelisted
 (getgenv()).key = script_key;
 (getgenv()).id = "856899137768652831";
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruComkak/main/PCBit.lua"))()
