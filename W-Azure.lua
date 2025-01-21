@@ -1,7 +1,7 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 UserSettings():GetService("UserGameSettings").MasterVolume = 0
 settings().Rendering.QualityLevel = 1
-setfpscap(15)
+setfpscap(10)
 
 script_key = "DUM-WAS-HERE_ktgA1fgAd1K7AwffAlJLsfi821ighLPzPefR="
 
